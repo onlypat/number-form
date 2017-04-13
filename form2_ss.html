@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Homework</title>
+
+
+<script>
+
+
+var i=0; 
+var x= 0;
+
+
+
+function increase()
+{
+i++;
+document.getElementById('plusone').innerHTML= i;
+x=Number(document.getElementById('input').value) + x;
+document.getElementById('add').innerHTML= x;
+document.getElementById('avg').innerHTML= x / i;
+
+}
+
+</script>
+</head>
+<h1>Number Form</h1>
+
+<p style="display:inline">Enter numbers here:</p>
+<input type="text" value="" id="input" />
+<input type="button" value="Submit" onClick="increase();">
+<input type="button" value="Reset" onClick="window.location.reload()">
+<p>Count: <b id="plusone">0</b></p>
+
+<p>Sum: <b id="add">0</b></p>
+
+<p>Average: <b id="avg">0</b></p>
+
+
+
+<body>
+</body>
+</html>
